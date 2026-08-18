@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Full Background */
+body{
+    min-height: 100vh;
+    padding: 30px 15px;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')
+    no-repeat center center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Registration Container */
+.container{
+    width: 850px;
+
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+
+    color: white;
+}
+
+/* Logo */
+.logo{
+    font-size: 34px;
+    font-weight: bold;
+    color: #ffd54f;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+/* Heading */
+h2{
+    text-align: center;
+    color: white;
+
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+
+/* Form Layout */
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Input Group */
+.input-group{
+    text-align: left;
+}
+
+/* Full Width */
+.input-group.full-width{
+    grid-column: span 2;
+}
+
+/* Labels */
+label{
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+    color: white;
+}
+
+/* Inputs */
+input,
+select,
+textarea{
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.9);
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+/* Focus Effect */
+input:focus,
+select:focus,
+textarea:focus{
+    background: white;
+    box-shadow: 0 0 10px rgba(255,255,255,0.7);
+}
+
+/* Gender Section */
+.gender{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-top: 10px;
+
+    color: white;
+}
+
+.gender input{
+    width: auto;
+}
+
+/* Button */
+.Reg-btn{
+    width: 100%;
+
+    padding: 14px;
+
+    background: #ff9800;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+/* Button Hover */
+.Reg-btn:hover{
+    background: #e68900;
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media(max-width: 768px){
+
+    .container{
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    form{
+        grid-template-columns: 1fr;
+    }
+
+    .input-group.full-width{
+        grid-column: span 1;
+    }
+
+    .logo{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+}
